@@ -1,0 +1,6 @@
+{
+    "entrypoints": [
+        "http://belgium.linkedconnections.org/sncb/connections"
+    ],
+    "port": 3000
+}

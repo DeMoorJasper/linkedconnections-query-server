@@ -1,0 +1,9 @@
+# node modules
+/node_modules
+package-lock.json
+
+# cache folder
+/cache
+
+# MAC STUFF
+.DS_Store
