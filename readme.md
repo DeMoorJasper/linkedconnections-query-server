@@ -24,8 +24,8 @@ Performance becomes better the more data gets cached, outperforming lc-client at
 Another benefit to users is the fact that most users query the same times at the same moment (the now), for example: Someone in Ghent queries Ghent to Brussels, meanwhile someone in Leuven queries to Antwerp. Both these trips share data fragments, so once the first user has queried the second one actually rides along the cache of the first user resulting in a more pleasant experience for both.
 
 Results of one test query:
-Without cache: 3650ms
-With cache: 650ms
+* Without cache: 3650ms
+* With cache: 650ms
 
 ## License
 MIT License
