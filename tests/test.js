@@ -12,19 +12,18 @@ let config = { 'entrypoints': ["http://belgium.linkedconnections.org/sncb/connec
 const Query = require('../lib/query/query');
 const planner = new Query(config);
 
-try {
-    planner.search(q).then((events) => {
-        events.planner.once('result', (path) => {
-            console.log("[PLANNER]: Result found");
-            // console.log(path);
-        });
-        // Keep event to prevent planner from going to take a nap
-        events.planner.on("data", function (connection) {
-            // console.log("[PLANNER]: Connection found");
-        });
+let startMillis = (new Date()).valueOf();
+console.log(`START TIME: ${startMillis}`);
+planner.search(q).then((events) => {
+    events.planner.once('result', (path) => {
+        console.log("[PLANNER]: Result found");
+        let endMillis = (new Date()).valueOf();
+        console.log(`END TIME: ${endMillis}`);
+        console.log(`TOOK: ${endMillis - startMillis}`);
+        // console.log(path);
     });
-} catch(e) {
-    console.log(e);
-}
-
-console.log(new Date().valueOf());
+    // Keep event to prevent planner from going to take a nap
+    events.planner.on("data", function (connection) {
+        console.log("[PLANNER]: Connection found");
+    });
+});
