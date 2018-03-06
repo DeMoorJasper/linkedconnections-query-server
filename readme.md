@@ -19,13 +19,16 @@ localhost:3000/query?q={"entrypoints":["http://belgium.linkedconnections.org/snc
 ``
 
 ## Results
-Performance becomes better the more data gets cached, outperforming lc-client at a certain point and definitely intresting once you keep in mind some users might have a slow network or low compute power (smartphones,...) and would have a long waiting time for results, for these users this method will always outperform client side calculations and fetching. (If hosted on a decent server with SSD storage and solid internet connection).
 
-Another benefit to users is the fact that most users query the same times at the same moment (the now), for example: Someone in Ghent queries Ghent to Brussels, meanwhile someone in Leuven queries to Antwerp. Both these trips share data fragments, so once the first user has queried the second one actually rides along the cache of the first user resulting in a more pleasant experience for both.
+This server makes it fast and easy to query routes using linkedconnections. Thanks to the workers and cache that are build-in this can be done in parallel at a speed that makes it usable for daily use, even outperforming some of the public transport routeplanners that are available at the moment.
 
-Results of one test query:
-* Without cache: 3650ms
-* With cache: 650ms
+For future scaling and even faster responses, this project can be extended to cache responses as well instead of only caching linked data files. However to query this in a very profitable way this should be stored in a database like for example mongoDB, changing the query endpoint, to first query the database for the requested route, before calculating any route, potentially saving a lot of processing power on the server.
+
+### Benchmark
+
+| with cache | without cache |
+|------------|---------------|
+| 650ms      | 3650ms        |
 
 ## License
 MIT License
