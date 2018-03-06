@@ -9,13 +9,13 @@ Basically doing the same but on the server side, with caching logic in place as 
 Simple request from Brussel-Noord to Roeselare
 
 ``
-localhost:3000/query?q={"entrypoints":["http://belgium.linkedconnections.org/sncb/connections"],"departureStop":"http://irail.be/stations/NMBS/008812005","arrivalStop":"http://irail.be/stations/NMBS/008896800","departureTime":"2017-07-21T17:34:17.000Z","minimumTransferTime":6}
+localhost:3000/query?q={"entrypoints":["http://belgium.linkedconnections.org/sncb/connections"],"departureStop":"http://irail.be/stations/NMBS/008812005","arrivalStop":"http://irail.be/stations/NMBS/008896800","departureTime":"2018-07-21T17:34:17.000Z","minimumTransferTime":6}
 ``
 
 Complete request from Brussel-Noord to Gent-Sint-Pieters
 
 ``
-localhost:3000/query?q={"entrypoints":["http://belgium.linkedconnections.org/sncb/connections"],"departureStop":"http://irail.be/stations/NMBS/008812005","arrivalStop":"http://irail.be/stations/NMBS/008892007","latestDepartTime":"2017-07-21T17:34:17.000Z","departureTime":"2017-07-21T16:34:17.000Z","minimumTransferTime":6,"searchTimeOut":60000}
+localhost:3000/query?q={"entrypoints":["http://belgium.linkedconnections.org/sncb/connections"],"departureStop":"http://irail.be/stations/NMBS/008812005","arrivalStop":"http://irail.be/stations/NMBS/008892007","latestDepartTime":"2018-07-21T17:34:17.000Z","departureTime":"2018-07-21T16:34:17.000Z","minimumTransferTime":6,"searchTimeOut":60000}
 ``
 
 ## Results
