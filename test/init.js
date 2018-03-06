@@ -1,5 +1,5 @@
 const http = require('http');
-const Server = require('../lib/endpoints/Server');
+const Server = require('../lib/Server');
 
 let server;
 async function initServer() {
@@ -24,7 +24,9 @@ async function sendRequest(url) {
 
 async function getServer() {
   if (!server) {
-    server = new Server(4400);
+    server = new Server(4400, {
+      logLevel: 0
+    });
     await server.start();
   }
   return server;

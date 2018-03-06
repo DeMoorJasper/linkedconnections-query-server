@@ -2,5 +2,6 @@
     "entrypoints": [
         "http://belgium.linkedconnections.org/sncb/connections"
     ],
-    "port": 3000
+    "port": 3000,
+    "logLevel": 3
 }
