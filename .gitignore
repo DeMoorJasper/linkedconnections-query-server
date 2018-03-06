@@ -3,7 +3,7 @@
 package-lock.json
 
 # cache folder
-/cache
+/.cache
 
 # MAC STUFF
 .DS_Store
