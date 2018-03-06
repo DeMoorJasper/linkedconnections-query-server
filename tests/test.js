@@ -9,8 +9,8 @@ let q = {
 };
 let config = { 'entrypoints': ["http://belgium.linkedconnections.org/sncb/connections"] };
 
-const Query = require('../lib/query/query');
-const planner = new Query(config);
+const Query = require('../lib/query/Planner');
+const planner = new Planner(config);
 
 let startMillis = (new Date()).valueOf();
 console.log(`START TIME: ${startMillis}`);
