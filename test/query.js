@@ -1,6 +1,6 @@
 const assert = require('assert');
 const { getServerLocation, sendRequest, getResultData } = require('./init');
-const rimraf = require('rimraf');
+const fs = require('fs-extra');
 const Path = require('path');
 
 describe('Endpoint: /query', function() {
@@ -75,7 +75,7 @@ describe('Endpoint: /query', function() {
     this.timeout(50000);
 
     // Remove all cache files
-    rimraf.sync(Path.join(__dirname, '../.cache'));
+    fs.removeSync(Path.join(__dirname, '../.cache'));
     
     const query = {
       entrypoints: ['http://belgium.linkedconnections.org/sncb/connections'],
