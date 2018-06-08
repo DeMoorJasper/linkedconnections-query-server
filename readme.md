@@ -1,6 +1,6 @@
 # Linked connections query server
 
-![Travis](https://travis-ci.org/DeMoorJasper/linkedconnections-query-server.svg?branch=master)
+[![Build Status](https://travis-ci.org/DeMoorJasper/linkedconnections-query-server.svg?branch=master)](https://travis-ci.org/DeMoorJasper/linkedconnections-query-server)
 
 A performance experiment to see how much difference it would make to have a caching/calculation server in place to calculate routes, fetch lc-data and cache this data.
 
