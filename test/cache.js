@@ -1,5 +1,5 @@
 const assert = require('assert');
-const CacheFetcher = require('../lib/caching/cacheFetcher');
+const CacheFetcher = require('../lib/caching/CacheFetcher');
 const LDFetch = require('ldfetch');
 
 describe('Cache', function() {
