@@ -15,12 +15,12 @@
     "express": "^4.16.2",
     "ldfetch": "0.0.3",
     "merge-sort-stream": "^1.0.5",
-    "mocha": "^5.0.2",
     "n3": "^0.11.2",
     "uritemplate": "^0.3.4",
     "worker-farm": "^1.5.4"
   },
   "devDependencies": {
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "mocha": "^5.0.2"
   }
 }
