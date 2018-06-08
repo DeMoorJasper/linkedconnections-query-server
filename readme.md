@@ -1,11 +1,16 @@
 # Linked connections query server
+
+![Travis](https://travis-ci.org/DeMoorJasper/linkedconnections-query-server.svg?branch=master)
+
 A performance experiment to see how much difference it would make to have a caching/calculation server in place to calculate routes, fetch lc-data and cache this data.
 
 ## About
+
 Based on the [linkedconnections client.js](https://github.com/linkedconnections/client.js).
 Basically doing the same but on the server side, with caching logic in place as well as endpoints for clients to send requests to.
 
 ## Example requests
+
 Simple request from Brussel-Noord to Roeselare
 
 ``
@@ -31,4 +36,5 @@ For future scaling and even faster responses, this project can be extended to ca
 | 650ms      | 3650ms        |
 
 ## License
+
 MIT License
